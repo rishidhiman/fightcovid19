@@ -1,0 +1,28 @@
+{
+  "name": "appointments",
+  "version": "1.1.0",
+  "description": "Appointments using AngularJS,express, NodeJS and MongoDB (Javascript Fullstack)",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.13.4",
+    "mongoose": "^5.7.7",
+    "node-restful": "^0.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node server",
+    "build": "node server",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "author": "rishi dhiman",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

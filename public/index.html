@@ -1,0 +1,58 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/angular-material.min.css">
+    <link rel="stylesheet" href="app/main.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins&display=swap'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css'>
+</head>
+
+<body ng-app="appointmentApp" layout="column">
+
+    <md-toolbar layout="column" class="md-whiteframe-z2">
+        <div class="md-toolbar-tools">
+            <h3><a ui-sref="/">Appointments &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today's date&nbsp;:&nbsp;</a></h3><h3><div id="output"></div></h3>
+			
+            <span flex></span>
+			
+            </md-menu-content>
+        </div>
+    </md-toolbar>
+	
+    <main></main>
+    <div class="footer">
+        <div class="footer-content" layout="row" layout-align="center center">
+            <div layout-align="start center"> Crafted with love by <a href=""
+                    target="_blank">Rishi</a></div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-animate.min.js"></script>
+<script type="text/javascript" src="js/angular-aria.min.js"></script>
+<script type="text/javascript" src="js/angular-material.min.js"></script>
+<script type="text/javascript" src="js/lodash.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+<!--<script type="text/javascript" src="bower_components/angular-moment/angular-moment.js"></script>-->
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="app/main.js"></script>
+<script>
+var today = new Date();
+
+var day = today.getDate();
+var month = today.getMonth() + 1;
+var year = today.getFullYear();
+
+if (day < 10) {
+  day = '0' + day
+}
+if (month < 10) {
+  month = '0' + month
+}
+
+var out = document.getElementById("output");
+
+out.innerHTML = day + "/" + month + "/" + year;
+</script>
+</html>
