@@ -32,3 +32,9 @@
   margin-top: 70px;
   border-top: 1px solid #E5E5E5;
 }
+md-toolbar.md-whiteframe-z2{
+  background-color: #008080;
+}
+md-button.md-raised{
+	  background-color: #008080;
+}
