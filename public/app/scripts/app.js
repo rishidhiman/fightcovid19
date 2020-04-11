@@ -2,7 +2,7 @@ var worldwide = false;
 var url = new URL(document.location);
 var params = url.searchParams;
 var countryID = params.get("country");
-var apiURL = "https://thevirustracker.com/free-api";
+var apiURL = "https://thevirustracker.com/free-api";//<<---using api>>
 var useProxy = true;
 
 countryID &&
