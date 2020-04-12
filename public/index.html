@@ -24,6 +24,14 @@
 	
     <main></main>
 	<h1><b>CHECK CORONA VIRUS STATUS COUNTRYWISE</b></h1>
+<md-card class="md-whiteframe-z2">
+<style type="text/css">     
+    select {
+
+ height: 60px !important;    }
+ 
+</style>
+
 	  <select id="country">
                     <option value="WW">Worldwide</option>
                     <option value="" disabled="disabled">---------------</option>
@@ -206,52 +214,54 @@
                     <option value="SG">Singapore</option>
                     <option value="HK">Hong Kong</option>
                     <option value="DP">Diamond Princess</option>
+					</h1>
                 </select>
                 <div class="total">
-                    <h2>Overall Situation:</h2>
+                    <center><h2>Overall Situation:</h2></center>
                     <div class="card-wrap" id="total">
                         <div class="card blue" id="total_cases">
                             <div class="content">
                                 <span class="loader"></span>
-                                <h3 class="count" style="display: none;">N/A</h3>
+                                <center><h3 class="count" style="display: none;">N/A</h3></center>
                             </div>
-                            <p>Cases</p>
+                            <center><p>Cases</p></center>
                         </div>
                         <div class="card red" id="total_deaths">
                             <div class="content">
                                 <span class="loader"></span>
-                                <h3 class="count" style="display: none;">N/A</h3>
+                                <center><h3 class="count" style="display: none;">N/A</h3></center>
                             </div>
-                            <p>Deaths</p>
+                            <center><p>Deaths</p></center>
                         </div>
                         <div class="card green" id="total_recovered">
                             <div class="content">
                                 <span class="loader"></span>
-                                <h3 class="count" style="display: none;">N/A</h3>
+                                <center><h3 class="count" style="display: none;">N/A</h3></center>
                             </div>
-                            <p>Recoveries</p>
+                            <center><p>Recoveries</p></center>
                         </div>
                     </div>
                 </div>
                 <div class="new">
-                    <h2>Today's Situation:</h2>
+                    <center><h2>Today's Situation:</h2></center>
                     <div class="card-wrap" id="new">
                         <div class="card blue" id="total_new_cases_today">
                             <div class="content">
                                 <span class="loader"></span>
-                                <h3 class="count" style="display: none;">N/A</h3>
+                                <center><h3 class="count" style="display: none;">N/A</h3></center>
                             </div>
-                            <p>Cases</p>
+                            <center><p>Cases</p></center>
                         </div>
                         <div class="card red" id="total_new_deaths_today">
                             <div class="content">
                                 <span class="loader"></span>
-                                <h3 class="count" style="display: none;">N/A</h3>
+                                <center><h3 class="count" style="display: none;">N/A</h3></center>
                             </div>
-                            <p>Deaths</p>
+                            <center><p>Deaths</p></center>
                         </div>
                     </div>
                 </div>
+				</mat-card>
     <div class="footer">
 	
               

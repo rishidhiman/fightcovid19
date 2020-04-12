@@ -35,4 +35,7 @@
 md-toolbar.md-whiteframe-z2{
   background-color: #008080;
 }
-
+.example-card {
+  max-width: 300px;
+  margin: 4px
+}
