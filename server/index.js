@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('dotenv').config();
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://db:rishudhiman@btao-lnedw.mongodb.net/test?retryWrites=true&w=majority/new';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://db:rishudhiman@btao-lnedw.mongodb.net/test?retryWrites=true&w=majority/';
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 const app = express();
 const port = 3000;
