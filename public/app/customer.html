@@ -9,12 +9,12 @@
     <md-dialog-content>
       <md-content layout="column" layout-align="start center">
         <md-input-container>
-          <label>Name</label>
+          <b><label>Name</label></b>
           <input ng-model="customer.name" required />
         </md-input-container>
         <md-input-container>
-          <label>phone no</label>
-          <input ng-model="customer.phone" required />
+          <b><label>enter last 4 digit of phone no</label></b>
+          <input ng-model="customer.phone" name="pincode" maxlength="4"  id="pin" pattern="\d{4}" required />
         </md-input-container>
         <md-input-container layout-align="center center">
         </md-input-container>
